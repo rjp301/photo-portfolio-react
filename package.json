@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/rjp301/photo-portfolio-rileypaul#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.3"
   },
   "devDependencies": {
