@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index"
+    "start": "node .",
+    "dev": "nodemon . & npm run scss",
+    "scss": "sass --watch src/scss/main.scss public/styles/main.css"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,8 @@
   "homepage": "https://github.com/rjp301/photo-portfolio-rileypaul#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "sass": "^1.50.1"
   },
   "devDependencies": {
     "dotenv": "^16.0.0",
