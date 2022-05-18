@@ -17,8 +17,9 @@ module.exports = () => {
     const result = {};
     result.name = album;
     result.id = createId(album);
+    result.link = `/portfolio/${result.id}`
     result.photos = cleanFiles(fs.readdirSync(albumPath)).map((i) =>
-      encodeURI(path.join(albumPath, i).replace("public/",""))
+      encodeURI(path.join(albumPath, i).replace("public", ""))
     );
     result.cover =
       result.photos.find((i) => i.includes("~")) || result.photos[0];

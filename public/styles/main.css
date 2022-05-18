@@ -51,6 +51,19 @@ header #title {
   color: black;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+  gap: 20px;
+}
+.gallery img {
+  width: 100%;
+  padding: 0 20px;
+}
+
 body {
   font-family: Roboto;
   margin: 0;

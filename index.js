@@ -14,6 +14,10 @@ app.get("/", (req, res) => {
   res.render("pages/index",{albums});
 });
 
+app.get("/portfolio/:id", (req, res) => {
+  res.render("pages/gallery",{album:albums[req.params.id]})
+})
+
 app.get("/contact", (req, res) => {
   res.render("pages/contact");
 });
