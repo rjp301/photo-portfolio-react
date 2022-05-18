@@ -12,7 +12,7 @@ module.exports = () => {
   const albumsPath = path.join("public", "albums");
   const folders = cleanFiles(fs.readdirSync(albumsPath));
 
-  const albums = folders.map(album => {
+  const albums = folders.reduce((acc,album) => {
     const albumPath = path.join(albumsPath, album);
     const result = {}
     result.name = album
@@ -20,7 +20,8 @@ module.exports = () => {
     result.photos = cleanFiles(fs.readdirSync(albumPath));
     result.cover =
       result.photos.find((i) => i.startsWith("~")) || result.photos[0];
-    return result;
-  });
+    acc[result.id] = result
+    return acc;
+  }, {});
   return albums;
 };
