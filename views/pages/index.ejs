@@ -8,10 +8,22 @@
 <body class="container">
   <header>
     <%- include("../partials/header"); %>
-    <%= pages %> 
   </header>
 
-  <main class="galleries-container">
+  <main class="masonry">
+    <% if (albums) { %>
+      <% for ( const [key,album] of Object.entries(albums)) { %>
+        <figure class="brick">
+          <img src=<%= album.cover %> alt="">
+          <a href=<%= album.link %>>
+            <div class="text-overlay">
+              <h2><%= album.name %></h2>
+              <h3>— view —</h3>
+            </div>
+          </a>
+        </figure>
+          <% } %>
+            <%} %>
   </main>
 
   <footer>

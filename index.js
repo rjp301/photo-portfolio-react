@@ -7,11 +7,11 @@ const PORT = process.env.PORT || 8000;
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-const pages = require('./src/helpers/readPhotos')()
-console.log(pages)
+const albums = require('./src/helpers/readPhotos')()
+console.log(albums)
 
 app.get("/", (req, res) => {
-  res.render("pages/index",{pages});
+  res.render("pages/index",{albums});
 });
 
 app.get("/contact", (req, res) => {
