@@ -1,7 +1,3 @@
-const fs = require("fs");
+const readPhotos = require("./src/helpers/readPhotos")
 
-fs.readdir("public/albums", (err, files) => {
-  const badFiles = [".DS_Store"]
-  const cleanedFiles = files.filter(i => badFiles.indexOf(i) === -1)
-  console.log(cleanedFiles)
-});
+console.log(readPhotos())
