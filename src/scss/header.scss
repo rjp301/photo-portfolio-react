@@ -6,6 +6,9 @@ header {
   width: 100%;
   background-color: white;
 
+  z-index: 100;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 15px 0px;
+
   img {
     float: left;
     height: 80px;

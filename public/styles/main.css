@@ -15,6 +15,8 @@ header {
   top: 0;
   width: 100%;
   background-color: white;
+  z-index: 100;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 15px 0px;
 }
 header img {
   float: left;
@@ -64,13 +66,8 @@ header #title {
   padding: 0 20px;
 }
 
-body {
-  font-family: Roboto;
-  margin: 0;
-}
-
 .masonry {
-  margin: 130px 1em 0 1em;
+  margin: 0 1em;
   column-count: 1;
   column-gap: 1em;
 }
@@ -128,6 +125,14 @@ body {
   .masonry {
     columns: 3;
   }
+}
+body {
+  font-family: Roboto;
+  margin: 0;
+}
+
+main {
+  padding-top: 130px;
 }
 
 /*# sourceMappingURL=main.css.map */
