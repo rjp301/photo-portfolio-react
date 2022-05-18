@@ -7,11 +7,10 @@
 
 <body class="container">
   <header>
-    <%- include("../partials/header"); %>
+    <%- include("../partials/header",{title:album.name}); %>
   </header>
   
   <main>
-    <h1><%= album.name %> </h1>
     <div class="gallery">
       <% album.photos.forEach(photo => { %>
        <img src=<%= photo %> alt="">
@@ -19,9 +18,6 @@
     </div>
   </main>
 
-  <footer>
-    <%- include("../partials/footer"); %>
-  </footer>
 </body>
 
 </html>
