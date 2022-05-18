@@ -1,7 +1,5 @@
 require("dotenv").config();
-const { resolveInclude } = require("ejs");
 const express = require("express");
-const res = require("express/lib/response");
 const app = express();
 
 const PORT = process.env.PORT || 8000;
@@ -9,8 +7,11 @@ const PORT = process.env.PORT || 8000;
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
+const pages = require('./src/helpers/readPhotos')()
+console.log(pages)
+
 app.get("/", (req, res) => {
-  res.render("pages/index");
+  res.render("pages/index",{pages});
 });
 
 app.get("/contact", (req, res) => {
