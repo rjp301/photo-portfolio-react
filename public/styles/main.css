@@ -1,6 +1,5 @@
-body {
-  font-family: Roboto;
-  margin: 0;
+footer {
+  background-color: red;
 }
 
 header {
@@ -44,6 +43,11 @@ header a:active {
 header #title {
   float: right;
   color: black;
+}
+
+body {
+  font-family: Roboto;
+  margin: 0;
 }
 
 .masonry {

@@ -1,55 +1,13 @@
+@use './footer.scss';
+@use './header.scss';
+
+
 body {
   font-family: Roboto;
   margin: 0;
 }
 
-header {
-  overflow: hidden;
-  display: block;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
 
-  img {
-    float: left;
-    height: 80px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  a {
-    color: #5c5c5c;
-    float: left;
-    display: block;
-    text-align: center;
-    height: 20;
-    padding-bottom: 3px;
-    margin: 50px 30px 0 0;
-
-    background-image: linear-gradient(black, black);
-    background-size: 0% 0.1em;
-    background-position-y: 100%;
-    background-position-x: 0%;
-    background-repeat: no-repeat;
-    transition: background-size 0.2s ease-in-out;
-    text-decoration: none;
-  }
-  
-  a:hover,
-  a:focus,
-  a:active {
-    background-size: 100% 0.1em;
-    color: black;
-  }
-
-  #title {
-    float: right;
-    color: black;
-  }
-}
 
 .masonry {
   margin: 130px 1em 0 1em;
