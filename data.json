@@ -1,0 +1,40 @@
+{
+  "nav": [
+    { "name": "About", "link": "#about" },
+    { "name": "Projects", "link": "#projects" },
+    { "name": "Contact", "link": "#contact" },
+    { "name": "Photography", "link": "http://photo.rileypaul.ca" }
+  ],
+  "social": [
+    {
+      "name": "Facebook",
+      "link": "https://www.facebook.com/rjpphoto",
+      "icon": "@mui/icons-material/FacebookOutlined"
+    },
+    {
+      "name": "Instagram",
+      "link": "https://www.instagram.com/riley_was_there/",
+      "icon": "@mui/icons-material/Instagram"
+    },
+    {
+      "name": "Email",
+      "link": "mailto:rileypaul96@gmail.com",
+      "icon": "@mui/icons-material/AlternateEmail"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/riley-paul-b84352106/",
+      "icon": "@mui/icons-material/LinkedIn"
+    },
+    {
+      "name": "Github",
+      "link": "https://github.com/rjp301",
+      "icon": "@mui/icons-material/GitHub"
+    },
+    {
+      "name": "Youtube",
+      "link": "https://www.youtube.com/channel/UCt3RczuBzIindDG5I8JW45A",
+      "icon": "@mui/icons-material/YouTube"
+    }
+  ]
+}

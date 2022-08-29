@@ -1,7 +1,7 @@
 {
   "name": "photo-portfolio-rileypaul",
   "version": "1.0.0",
-  "description": "",
+  "description": "Photography portfolio website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,6 +24,9 @@
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "sass": "^1.50.1"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
   },
   "devDependencies": {
     "dotenv": "^16.0.0",

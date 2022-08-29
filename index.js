@@ -1,8 +1,7 @@
-require("dotenv").config();
+// require("dotenv").config();
 const express = require("express");
 const app = express();
 
-const PORT = process.env.PORT || 8000;
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -26,4 +25,5 @@ app.get("/about", (req, res) => {
   res.render("pages/about");
 });
 
+const PORT = parseInt(process.env.PORT) || 8080;
 app.listen(PORT, () => console.log(`Listening on localhost:${PORT}...`));
