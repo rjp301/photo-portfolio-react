@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Alberta Foothills",
+    "images": [
+      "~Untitled-83.jpg",
+      "Untitled-79.jpg",
+      "Untitled-80.jpg",
+      "Untitled-81.jpg",
+      "Untitled-82.jpg",
+      "Untitled-84.jpg",
+      "Untitled-85.jpg",
+      "Untitled-86.jpg",
+      "Untitled-87.jpg",
+      "Untitled-88.jpg",
+      "Untitled-89.jpg",
+      "Untitled-90.jpg",
+      "Untitled-91.jpg",
+      "Untitled-92.jpg",
+      "Untitled-93.jpg",
+      "Untitled-94.jpg"
+    ],
+    "cover": "~Untitled-83.jpg",
+    "description": "Undulating hills ripple away from the jagged peaks that mark the portal to the west"
+  },
+  {
+    "name": "Animals",
+    "images": [
+      "Untitled-69.jpg",
+      "Untitled-68.jpg",
+      "Untitled-70.jpg",
+      "Untitled-71.jpg",
+      "Untitled-72.jpg",
+      "Untitled-73.jpg",
+      "Untitled-74.jpg",
+      "Untitled-75.jpg",
+      "Untitled-76.jpg",
+      "Untitled-77.jpg",
+      "Untitled-78.jpg"
+    ],
+    "cover": "Untitled-69.jpg",
+    "description": "Eyes are the windows to the soul - regardless of species"
+  },
+  {
+    "name": "Animals",
+    "images": [
+      "Untitled-104.jpg",
+      "Untitled-095.jpg",
+      "Untitled-096.jpg",
+      "Untitled-097.jpg",
+      "Untitled-098.jpg",
+      "Untitled-099.jpg",
+      "Untitled-100.jpg",
+      "Untitled-101.jpg",
+      "Untitled-102.jpg",
+      "Untitled-103.jpg",
+      "Untitled-105.jpg",
+      "Untitled-106.jpg"
+    ],
+    "cover": "Untitled-097.jpg",
+    "description": "Eyes are the windows to the soul - regardless of species"
+  }
+]

@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
 import { lightTheme } from "./utils/theme";
@@ -10,16 +10,18 @@ import About from "./pages/About";
 export default function App() {
   return (
     <ThemeProvider theme={lightTheme}>
-      <Routes>
-        <Route path="/">
-          <Route index element={<Albums />} />
-          <Route path="albums">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/">
             <Route index element={<Albums />} />
-            <Route path=":albumId" element={<Album />} />
+            <Route path="albums">
+              <Route index element={<Albums />} />
+              <Route path=":albumId" element={<Album />} />
+            </Route>
+            <Route path="about" element={<About />} />
           </Route>
-          <Route path="about" element={<About />} />
-        </Route>
-      </Routes>
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
