@@ -1,8 +1,8 @@
-export default function Album(props) {
 
+export default function Album(props) {
   return (
     <div>
       album
     </div>
-  )
+  );
 }

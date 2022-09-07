@@ -1,4 +1,7 @@
+const navHeight = "84px";
+
 export const darkTheme = {
+  navHeight,
   bg: "#202020",
   bgLighter: "#303030",
   bgDarker: "#060606",
@@ -9,6 +12,7 @@ export const darkTheme = {
 };
 
 export const lightTheme = {
+  navHeight,
   bg: "#f9f9f9",
   bgDarker: "#f2f2f2",
   bgLighter: "white",
