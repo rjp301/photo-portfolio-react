@@ -24,11 +24,17 @@ const Group = styled.div`
   gap: 20px;
 `;
 
+const Logo = styled.img`
+  height: calc(${({ theme }) => theme.navHeight} / 1.5);
+`;
+
 export default function Header(props) {
   return (
     <Container>
       <Group>
+        <Logo src="favicon.png" />
         <HeaderLink to="albums" text="Portfolio" />
+        <HeaderLink to="about" text="About" />
       </Group>
       <Group></Group>
     </Container>

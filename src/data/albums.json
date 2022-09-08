@@ -1,6 +1,7 @@
 [
   {
     "name": "Alberta Foothills",
+    "id": "alberta_foothills",
     "images": [
       "~Untitled-83.jpg",
       "Untitled-79.jpg",
@@ -19,11 +20,12 @@
       "Untitled-93.jpg",
       "Untitled-94.jpg"
     ],
-    "cover": "~Untitled-83.jpg",
+    "cover": "Untitled-83.jpg",
     "description": "Undulating hills ripple away from the jagged peaks that mark the portal to the west"
   },
   {
     "name": "Animals",
+    "id": "animals",
     "images": [
       "Untitled-69.jpg",
       "Untitled-68.jpg",
@@ -42,6 +44,7 @@
   },
   {
     "name": "Beautiful British Columbia",
+    "id": "british_columbia",
     "images": [
       "Untitled-104.jpg",
       "Untitled-095.jpg",
@@ -61,6 +64,7 @@
   },
   {
     "name": "Canadian Rockies",
+    "id": "rockies",
     "images": [
       "Untitled-133.jpg",
       "Untitled-134.jpg",
@@ -82,6 +86,7 @@
   },
   {
     "name": "Coast of Newfoundland",
+    "id": "newfoundland",
     "images": [
       "Untitled-35.jpg",
       "Untitled-36.jpg",
@@ -100,6 +105,7 @@
   },
   {
     "name": "Iceland",
+    "id": "iceland",
     "images": [
       "Untitled-17.jpg",
       "Untitled-18.jpg",
@@ -118,6 +124,7 @@
   },
   {
     "name": "Plains of Saskatchewan",
+    "id": "saskatchewan",
     "images": [
       "Untitled-28.jpg",
       "Untitled-29.jpg",
@@ -132,6 +139,7 @@
   },
   {
     "name": "Portraits",
+    "id": "portraits",
     "images": [
       "Untitled-46.jpg",
       "Untitled-47.jpg",

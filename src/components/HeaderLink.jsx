@@ -4,8 +4,9 @@ import { NavLink } from "react-router-dom";
 const Container = styled.div`
   color: ${({ theme }) => theme.textSoft};
 
-  & * {
-    text-decoration: none;
+  & a {
+    text-decoration: inherit;
+    color: inherit;
     padding-bottom: 2px;
   }
 

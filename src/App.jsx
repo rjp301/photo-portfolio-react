@@ -19,8 +19,6 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const Wrapper = styled.div``;
-
 const Main = styled.div`
   padding: 20px;
 `;
@@ -38,20 +36,22 @@ export default function App() {
           }`}</style>
       </Helmet>
       <BrowserRouter>
-        <Header />
-        <Main>
-          <Routes>
-            <Route path="/">
-              <Route index element={<Albums />} />
-              <Route path="albums">
+        <Container>
+          <Header />
+          <Main>
+            <Routes>
+              <Route path="/">
                 <Route index element={<Albums />} />
-                <Route path=":albumId" element={<Album />} />
+                <Route path="albums">
+                  <Route index element={<Albums />} />
+                  <Route path=":albumId" element={<Album />} />
+                </Route>
+                <Route path="about" element={<About />} />
               </Route>
-              <Route path="about" element={<About />} />
-            </Route>
-          </Routes>
-        </Main>
-        <Footer />
+            </Routes>
+          </Main>
+          <Footer />
+        </Container>
       </BrowserRouter>
     </ThemeProvider>
   );
