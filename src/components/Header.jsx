@@ -32,7 +32,7 @@ export default function Header(props) {
   return (
     <Container>
       <Group>
-        <Logo src="favicon.png" />
+        <Logo src="/favicon.png" />
         <HeaderLink to="albums" text="Portfolio" />
         <HeaderLink to="about" text="About" />
       </Group>

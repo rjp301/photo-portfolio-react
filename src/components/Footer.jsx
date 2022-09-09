@@ -4,9 +4,10 @@ import data from "./../data/contact.json";
 const Container = styled.div`
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 30px 0;
+  padding: 30px;
 `;
 
 const Wrapper = styled.div`

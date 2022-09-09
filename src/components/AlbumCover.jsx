@@ -7,6 +7,7 @@ const Container = styled.figure`
   display: inline-block;
   margin: 0 0 1em;
   width: 100%;
+  box-shadow: ${({ theme }) => theme.boxShadow};
 `;
 
 const Image = styled.img`
@@ -45,8 +46,8 @@ const Info = styled.div`
 const Title = styled.div``;
 
 const View = styled.div`
-  color: ${({ theme }) => theme.textSoft};
   padding-top: 5px;
+  opacity: 0.7;
   font-style: italic;
   font-weight: 300;
 `;
@@ -56,7 +57,7 @@ export default function AlbumCover(props) {
 
   return (
     <Container>
-      <Image src={`images/${album.cover}`} alt={album.name} />
+      <Image src={`/images/${album.cover}`} alt={album.name} />
       <Link to={album.id}>
         <Info>
           <Title>{album.name}</Title>

@@ -20,7 +20,7 @@ const Container = styled.div`
 `;
 
 const Main = styled.div`
-  padding: 20px;
+  padding: 30px;
 `;
 
 export default function App() {

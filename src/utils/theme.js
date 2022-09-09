@@ -1,7 +1,9 @@
 const navHeight = "84px";
+const pagePadding = "30px";
 
 export const darkTheme = {
   navHeight,
+  pagePadding,
   bg: "#202020",
   bgLighter: "#303030",
   bgDarker: "#060606",
@@ -13,6 +15,7 @@ export const darkTheme = {
 
 export const lightTheme = {
   navHeight,
+  pagePadding,
   bg: "#f9f9f9",
   bgDarker: "#f2f2f2",
   bgLighter: "white",

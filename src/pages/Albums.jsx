@@ -9,8 +9,8 @@ export default function Albums(props) {
     <Masonry
       breakpointCols={{
         default: 4,
-        1100: 3,
-        700: 2,
+        1400: 3,
+        850: 2,
         500: 1,
       }}
       className="my-masonry-grid"
