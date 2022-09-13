@@ -1,19 +1,70 @@
-# Personal Photography Portfolio
+# Getting Started with Create React App
 
-## Introduction
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-For my first project as a graduate of a full-stack web development bootcamp I chose to create a website to showcase my second passion - my photography. For years I have been overpaying Squarespace to host my work. I made this website completely from scratch and hosted it on Google Cloud - I even designed the logo myself.
+## Available Scripts
 
-## Design
+In the project directory, you can run:
 
-One of the main features I wanted this website to have was an easy way to modify the selection of photos. I am always creating new work and thought having to change the image URI in three different places each time would dissuade me from keeping the photos fresh. To keep the code as DRY as possible, I implemented a marginally clever mechanism for generating the pages using just the file system of the server.
+### `npm start`
 
-When the server boots up it reads the file system and generates a representation of all the folders and the photos in those photos. This representation is passed to EJS templates for the album page and gallery pages. Those pages are able to use this object to dynamically pull in the applicable images and even assign a photo to be the cover if it has a tilde in the filename.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Technology
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-I attempted to keep things as lightweight and simple as possible for my first website. I used EJS and SASS for the frontend with only a couple templates and partials and no repetitive code, and Express and NODEjs on the backend for it’s ease of use and great filesystem library.
+### `npm test`
 
-## Challenges
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Building the website was easy compared to getting it on the internet. I struggled to configure my website in Google Cloud services and transferring my domain name took a lot of tinkering with DNS Records.
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
