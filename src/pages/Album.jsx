@@ -25,15 +25,25 @@ const Desc = styled.p`
   padding-bottom: ${({ theme }) => theme.pagePadding};
 `;
 
-const Image = styled.img`
+const ImageContainer = styled.div`
   height: calc(
     100vh - ${({ theme }) => theme.navHeight} - 2 *
       ${({ theme }) => theme.pagePadding} + 10px
   );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Image = styled.img`
+
+  width: 100%;
+  height: 100%;
+
   align-self: center;
   object-fit: contain;
   max-width: 100%;
-  box-shadow: ${({ theme }) => theme.boxShadow};
+  /* box-shadow: ${({ theme }) => theme.boxShadow}; */
   z-index: 1;
 `;
 
@@ -47,7 +57,9 @@ export default function Album(props) {
       <Desc>{album.description}</Desc>
       <Wrapper>
         {album.images.map((image, index) => (
-          <Image key={index} src={`/images/${image}`} />
+          <ImageContainer key={index} >
+            <Image src={`/images/${image}`} />
+          </ImageContainer>
         ))}
       </Wrapper>
     </Container>
