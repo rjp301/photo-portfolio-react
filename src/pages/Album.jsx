@@ -7,12 +7,6 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: ${({ theme }) => theme.pagePadding};
-`;
-
 const Title = styled.div`
   font-weight: 600;
   font-size: 1.1rem;
@@ -25,6 +19,16 @@ const Desc = styled.p`
   padding-bottom: ${({ theme }) => theme.pagePadding};
 `;
 
+const Wrapper = styled.div`
+  display: grid;
+  grid-auto-flow: row;
+  gap: ${({ theme }) => theme.pagePadding};
+
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
+`;
+
 const ImageContainer = styled.div`
   height: calc(
     100vh - ${({ theme }) => theme.navHeight} - 2 *
@@ -33,18 +37,19 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
 
-const Image = styled.img`
+  scroll-snap-align: center;
 
-  width: 100%;
-  height: 100%;
+  & img {
+    width: 100%;
+    height: 100%;
 
-  align-self: center;
-  object-fit: contain;
-  max-width: 100%;
-  /* box-shadow: ${({ theme }) => theme.boxShadow}; */
-  z-index: 1;
+    align-self: center;
+    object-fit: contain;
+    max-width: 100%;
+    /* box-shadow: ${({ theme }) => theme.boxShadow}; */
+    z-index: 1;
+  }
 `;
 
 export default function Album(props) {
@@ -57,8 +62,8 @@ export default function Album(props) {
       <Desc>{album.description}</Desc>
       <Wrapper>
         {album.images.map((image, index) => (
-          <ImageContainer key={index} >
-            <Image src={`/images/${image}`} />
+          <ImageContainer key={index}>
+            <img src={`/images/${image}`} alt="" />
           </ImageContainer>
         ))}
       </Wrapper>
