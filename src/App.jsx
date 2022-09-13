@@ -21,6 +21,8 @@ const Container = styled.div`
 
 const Main = styled.div`
   padding: 30px;
+  display: flex;
+  justify-content: center;
 `;
 
 export default function App() {

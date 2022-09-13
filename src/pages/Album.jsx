@@ -33,6 +33,8 @@ const Image = styled.img`
   align-self: center;
   object-fit: contain;
   max-width: 100%;
+  box-shadow: ${({ theme }) => theme.boxShadow};
+  z-index: 1;
 `;
 
 export default function Album(props) {
